@@ -20,7 +20,7 @@ var friends = [
 
     {
         "name": "Wiam",
-        "photo": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gettyimages-89851349-1564747627.jpg",
+        "photo": "https://thecaninecode.com/images/martys_retriever.jpg",
         "scores": [
             3,
             1,

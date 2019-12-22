@@ -20,7 +20,7 @@ module.exports = function (app) {
         // Receive user as objet
         var user = req.body;
 
-        // parseInt for scores
+        // parseInt for scores because the number 1 and 5 has string.
         for (var i = 0; i < user.scores.length; i++) {
             user.scores[i] = parseInt(user.scores[i]);
         }
@@ -29,11 +29,12 @@ module.exports = function (app) {
         // the bad match is when the differnce is 40 (4x10)
 
         var bestFriendIndex = 0;
-        var minimumDifference = 40;
+        var maxDifference = 40;
 
-        // we need to loops
+        // we need 2 loops
         // one loop we go through all friends file
         // second will check scores from each friend
+        //use Math.abs to return absolute value of a number
         for (var i = 0; i < friends.length; i++) {
             var totalDifference = 0;
             for (var j = 0; j < friends[i].scores.length; j++) {
@@ -42,13 +43,13 @@ module.exports = function (app) {
             }
 
             // if there is a new minimum, change the best friend index and set the new minimum for next iteration comparisons
-            if (totalDifference < minimumDifference) {
+            if (totalDifference < maxDifference) {
                 bestFriendIndex = i;
-                minimumDifference = totalDifference;
+                maxDifference = totalDifference;
             }
         }
 
-        // after finding match, add user to friend array
+        // after finding match, add user to friends array
         friends.push(user);
 
         // send back to browser the best friend match
