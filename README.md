@@ -1,7 +1,7 @@
 # FriendFinder
 
 Overview
-In this activity, you'll build a compatibility-based "FriendFinder" application -- basically a dating app. This full-stack site will take in results from your users' surveys, then compare their answers with those from other users. The app will then display the name and picture of the user with the best overall match. You will use Express to handle routing. Make sure you deploy your app to Heroku so other users can fill it out.
+In this activity, you'll build a compatibility-based "FriendFinder" application -- basically a dating app. This full-stack site will take in results from your users' surveys, then compare their answers with those from other users. The app will then display the name and picture of the user with the best overall match. I use Express to handle routing. and deploy your app to Heroku so other users can fill it out.
 
 Use the App
 This application is hosted on Heroku: Answer the 10-question survey and be matched to a friend based on your answers!
