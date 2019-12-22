@@ -1,3 +1,4 @@
+//api for friends to be used for comparison and export the file to be used in localhost/api/friends
 var friends = [
 
     {

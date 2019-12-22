@@ -1,42 +1,23 @@
-// ===============================================================================
-// LOAD DATA
-// We are linking our routes to a series of "data" sources.
-// These data sources hold arrays of information on table-data, waitinglist, etc.
-// ===============================================================================
+// we are calling friends.js file because will be use to look for friend match
 
 var friends = require("../data/friends.js");
 
 
-
-// ===============================================================================
 // ROUTING
-// ===============================================================================
-
+// 
 module.exports = function (app) {
-    // API GET Requests
-    // Below code handles when users "visit" a page.
-    // In each of the below cases when a user visits a link
-    // (ex: localhost:PORT/api/admin... they are shown a JSON of the data in the table)
-    // ---------------------------------------------------------------------------
-
+    // api Get request, when the user visit the page localhot7500/api/friends.
     app.get("/api/friends", function (req, res) {
         res.json(friends);
     });
 
-
-
     // API POST Requests
-    // Below code handles when a user submits a form and thus submits data to the server.
-    // In each of the below cases, when a user submits form data (a JSON object)
-    // ...the JSON is pushed to the appropriate JavaScript array
-    // (ex. User fills out a reservation request... this data is then sent to the server...
-    // Then the server saves the data to the tableData array)
-    // ---------------------------------------------------------------------------
+    // the new friend fill up the form and will be send to friends.js file
 
     app.post("/api/friends", function (req, res) {
         console.log(req.body.scores);
 
-        // Receive user details (name, photo, scores)
+        // Receive user as objet
         var user = req.body;
 
         // parseInt for scores
@@ -44,12 +25,15 @@ module.exports = function (app) {
             user.scores[i] = parseInt(user.scores[i]);
         }
 
-        // default friend match is the first friend but result will be whoever has the minimum difference in scores
+        // the good match when the differnce is 0
+        // the bad match is when the differnce is 40 (4x10)
+
         var bestFriendIndex = 0;
         var minimumDifference = 40;
 
-        // in this for-loop, start off with a zero difference and compare the user and the ith friend scores, one set at a time
-        //  whatever the difference is, add to the total difference
+        // we need to loops
+        // one loop we go through all friends file
+        // second will check scores from each friend
         for (var i = 0; i < friends.length; i++) {
             var totalDifference = 0;
             for (var j = 0; j < friends[i].scores.length; j++) {
@@ -73,15 +57,4 @@ module.exports = function (app) {
 };
 
 
-    // ---------------------------------------------------------------------------
-    // I added this below code so you could clear out the table while working with the functionality.
-    // Don"t worry about it!
 
-//     app.post("/api/clear", function (req, res) {
-//         // Empty out the arrays of data
-//         friends.length = 0;
-
-
-//         res.json({ ok: true });
-//     });
-// };
