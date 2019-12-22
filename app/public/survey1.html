@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tables Page</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="jumbotron">
+            <h1 class="text-center"><span class="fa fa-fire"></span> Survey Questions</h1>
+            <hr>
+        </div>
+
+        <div class="form-group">
+            <h3>About Me</h3>
+            <label for="usr">Name (Required)
+            </label>
+            <input id="name" type="text" class="form-control" id="usr">
+        </div>
+        <div class="form-group">
+            <label>Link to Photo Image (Required)</label>
+            <input id="photo" class="form-control">
+        </div>
+        <h3>Question 1 </h3>
+        <h6> Your mind is always buzzing with unexplored ideas and plans.</h6>
+        <select id="q1" class="custom-select">
+            <option selected>Select an option</option>
+            <option value="1">1(Stronglt Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="2">4</option>
+            <option value="3">5(Strongly Agree)</option>
+        </select>
+        <hr>
+        <h3>Question 2 </h3>
+        <h6> Generally speaking, you rely more on your experience than your imagination.
+        </h6>
+        <select id="q2" class="custom-select">
+            <option selected>Select an option</option>
+            <option value="1">1(Stronglt Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="2">4</option>
+            <option value="3">5(Strongly Agree)</option>
+        </select>
+        <hr>
+        <h3>Question 3 </h3>
+        <h6> You find it easy to stay relaxed and focused even when there is some pressure.</h6>
+        <select id="q3" class="custom-select">
+            <option selected>Select an option</option>
+            <option value="1">1(Stronglt Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="2">4</option>
+            <option value="3">5(Strongly Agree)</option>
+        </select>
+        <hr>
+        <h3>Question 4 </h3>
+        <h6> You rarely do something just out of sheer curiosity.</h6>
+        <select id="q4" class="custom-select">
+            <option selected>Select an option</option>
+            <option value="1">1(Stronglt Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="2">4</option>
+            <option value="3">5(Strongly Agree)</option>
+        </select>
+        <hr>
+        <h3>Question 5 </h3>
+        <h6> People can rarely upset you.</h6>
+        <select id="q5" class="custom-select">
+            <option selected>Select an option</option>
+            <option value="1">1(Stronglt Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="2">4</option>
+            <option value="3">5(Strongly Agree)</option>
+        </select>
+        <hr>
+        <h3>Question 6 </h3>
+        <h6> It is often difficult for you to relate to other people’s feelings.</h6>
+        <select id="q6" class="custom-select">
+            <option selected>Select an option</option>
+            <option value="1">1(Stronglt Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="2">4</option>
+            <option value="3">5(Strongly Agree)</option>
+        </select>
+        <hr>
+        <h3>Question 7 </h3>
+        <h6> In a discussion, truth should be more important than people’s sensitivities.</h6>
+        <select id="q7" class="custom-select">
+            <option selected>Select an option</option>
+            <option value="1">1(Stronglt Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="2">4</option>
+            <option value="3">5(Strongly Agree)</option>
+        </select>
+        <hr>
+
+        <h3>Question 8 </h3>
+        <h6> You rarely get carried away by fantasies and ideas.</h6>
+        <select id="q8" class="custom-select">
+            <option selected>Select an option</option>
+            <option value="1">1(Stronglt Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="2">4</option>
+            <option value="3">5(Strongly Agree)</option>
+        </select>
+        <hr>
+        <h3>Question 9 </h3>
+        <h6> You think that everyone’s views should be respected regardless of whether they are supported by facts
+            or
+            not.</h6>
+        <select id="q9" class="custom-select">
+            <option selected>Select an option</option>
+            <option value="1">1(Stronglt Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="2">4</option>
+            <option value="3">5(Strongly Agree)</option>
+        </select>
+        <hr>
+        <h3>Question 10 </h3>
+        <h6> ou feel more energetic after spending time with a group of people.</h6>
+        <select id="q10" class="custom-select">
+            <option selected>Select an option</option>
+            <option value="1">1(Stronglt Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="2">4</option>
+            <option value="3">5(Strongly Agree)</option>
+        </select>
+        <hr>
+
+        <div class="text-center">
+            <button id="submitBtn" type="submit" class="btn btn-success btn-lg">Submit</button>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <p><a href="/api/friends">API Friend List</a> | <a href="/api/waitlist"> GitHub Repo</a>
+        </div>
+    </footer>
+    div class="modal" id="executeModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Friend Match</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h4>Your new friend's name is: <span id="bestName"></span></h4>
+                <img id="bestImg">
+                <!-- <p>Modal body text goes here.</p> -->
+            </div>
+            <div class="modal-footer">
+                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
+<!-- BELOW CODE IS CRITICAL. IT HANDLES HOW FORM DATA IS SENT TO OUR SERVER -->
+<script type="text/javascript">
+
+
+    // In this code below we create the Front-end JavaScript which "POSTS" our form data to our express server.
+    // In essence, when the user hits submit, jQuery grabs all of the fields then sends a post request to our api
+    // Our api recognizes the route (/api/tables)... and then runs the associated code (found in api-routes.js).
+    // In this case the associated code "saves" the data to the table-data.js file or waitinglist-data.js file
+
+    $("submitBtn").on("click", function (event) {
+        event.preventDefault();
+
+        // Here we grab the form elements
+        var newFriend = {
+            Name: $("#name").val().trim(),
+            Photo: $("#photo").val().trim(),
+            scores: [
+                $("#q1").val().trim(),
+                $("#q2").val().trim(),
+                $("#q3").val().trim(),
+                $("#q4").val().trim(),
+                $("#q5").val().trim(),
+                $("#q6").val().trim(),
+                $("#q7").val().trim(),
+                $("#q8").val().trim(),
+                $("#q9").val().trim(),
+                $("#q10").val().trim()
+            ]
+        };
+
+        console.log(newFriend);
+
+        // This line is the magic. It"s very similar to the standard ajax function we used.
+        // Essentially we give it a URL, we give it the object we want to send, then we have a "callback".
+        // The callback is the response of the server. In our case, we set up code in api-routes that "returns" true or false
+        // depending on if a tables is available or not.
+
+        $.post("/api/friends", newFriend,
+            function (data) {
+
+                // If a table is available... tell user they are booked.
+                if (data) {
+                    //alert("Yay! You are part of the FriendFinder Network, please wait for your best friend match!");
+                    $('#bestName').text(data.name);
+                    $('#bestImg').attr("src", data.img).addClass("img-fluid");
+                    //show modal with best friend match
+                    $('#executeModal').modal('toggle');
+                    //   $('#myModal').on('shown.bs.modal', function () {
+                    // 	$('#myInput').trigger('focus')
+                    // })
+                }
+
+                // If a table is available... tell user they on the waiting list.
+                else {
+                    alert("Sorry you are on in the list");
+                }
+
+                // Clear the form when submitting
+                $("#name").val("");
+                $("#photo").val("");
+                $("#q1").val("");
+                $("#q2").val("");
+                $("#q3").val("");
+                $("#q4").val("");
+                $("#q5").val("")
+                $("#q6").val("");
+                $("#q7").val("");
+                $("#q8").val("");
+                $("#q9").val("");
+                $("#q10").val("");
+            });
+
+    });
+
+</script>
